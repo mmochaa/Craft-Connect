@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/landing_styles.css';
+import '../styles/landing.css';
 
 const sheetUrl = 'https://docs.google.com/spreadsheets/d/1vs_d03-jsPByOhuX0f6AilppK1pTfztTvTlFWcoRbn0/gviz/tq?tqx=out:csv';
 
-const Main = ({ onSignInClick }) => {
+const Landing = ({ onSignInClick }) => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -67,4 +67,4 @@ const Main = ({ onSignInClick }) => {
   );
 };
 
-export default Main;
+export default Landing;

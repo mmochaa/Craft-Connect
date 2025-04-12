@@ -1,0 +1,185 @@
+/* Add or adjust in landing_styles.css */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+}
+
+.top-bar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  flex: 1; /* Take up available space */
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  background-color: white; /* Restores the white background */
+  padding: 10px 20px;
+  border-radius: 1.9em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.login-btn {
+  background-color: #89AC6B;
+  border-radius: 1.9em;
+  justify-content: center;
+  padding: 8px 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Center the text vertically */
+}
+
+.login-btn p {
+  color: #E4E6D9;
+  font-size: 14px;
+}
+
+.accountimg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.search, .filter {
+  --padding: 14px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-radius: 1.9em;
+  background: #ffffff;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 0.25s;
+}
+
+.search:focus-within, .filter:focus-within {
+  box-shadow: 0 0 3px #3A5E4A;
+}
+
+.search-icon, .filter-icon, .material-symbols-outlined {
+  margin-left: 10px;
+  color: #3A5E4A;
+}
+
+.search-input, .filter-input {
+  padding: 10px 15px;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #3A5E4A;
+  background: transparent;
+  margin-left: 14px;
+  width: 100%;
+}
+
+.search-input::placeholder, .filter-input::placeholder {
+  color: #3A5E4A;
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  font-size: 48px;
+  margin: 0px 50px;
+}
+
+/* Nav Bar with Glassy Effect */
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  z-index: 10;
+}
+
+/* Icon Container inside Nav Bar */
+.nav-icons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem; /* controls icon size */
+}
+
+/* Material Design Icons */
+.material-symbols-outlined {
+  cursor: pointer;
+  font-size: 24px; /* Icon size */
+  color: #3A5E4A;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Icon Hover Effect */
+.material-symbols-outlined:hover {
+  color: #89AC6B;
+}
+
+/* Cards */
+:root {
+  --card_width: 250px;
+  --row_increment: 10px;
+  --card_border_radius: 16px;
+  --card_small: 26;
+  --card_medium: 33;
+  --card_large: 45;
+  --bordercurve: 1.9em;
+}
+
+.pin_container {
+  width: 100%;
+  max-width: 1200px;  /* Set a max-width to limit the container width */
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Keeps the cards responsive */
+  grid-auto-rows: var(--row_increment);
+  justify-content: center;
+  padding: 0 10px;  /* Adds some padding around the container */
+  margin-left: auto; /* Centers the container horizontally */
+  margin-right: auto; /* Centers the container horizontally */
+}
+
+.card {
+  padding: 0;
+  margin: 15px 10px;
+  border-radius: var(--card_border_radius);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2.5px solid #B0C594;
+  border-radius: var(--bordercurve);
+}
+
+.card_small {
+  grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+  grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+  grid-row-end: span var(--card_large);
+}

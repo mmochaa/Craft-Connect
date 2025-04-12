@@ -3,12 +3,12 @@ import '../styles/signIn.css';
 
 const SignIn = (props) => {
   const [email, setEmail] = useState('');
-  const [pass, setPass] = useState('');
+  const [password, setPass] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Email:', email);
-    console.log('Password:', pass);
+    console.log('Password:', password);
     // Add login logic here
   };
 
@@ -28,7 +28,7 @@ const SignIn = (props) => {
           />
           <label htmlFor="password">Password</label>
           <input
-            value={pass}
+            value={password}
             onChange={(e) => setPass(e.target.value)}
             type="password"
             placeholder="********"

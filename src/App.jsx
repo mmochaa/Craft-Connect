@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SignIn from './components/signIn';    // Adjust path if needed
-import Landing from './components/landing';  // This was Main.jsx
+import SignIn from './components/SignIn';    // Adjust path if needed
+import Landing from './components/Landing';  // This was Main.jsx
 
 function App() {
   const [currentForm, setCurrent] = useState('main'); // 'main' or 'login'
