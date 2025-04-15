@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Craft Connect Main Page</title>
+  <link rel="stylesheet" href="landing.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Include PapaParse CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script defer src="landing.js"></script> 
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <form class="filter-container">
+        <div class="filter">
+          <span class="filter-icon material-symbols-outlined">menu</span>
+          <input class="filter-input" type="search" placeholder="Filter Tags">
+        </div>
+      </form>
+      <div class="login-btn">
+        <p>Login/Create Account</p>
+      </div>
+    </div>
+    <img class="accountimg" src="https://i.postimg.cc/PJYz112n/account.png" alt="Account Icon">
+  </div>
+
+  <!-- Container for auto-generated cards -->
+  <div class="pin_container"></div>
+
+  <!-- Floating Navigation Bar -->
+  <nav>
+    <div class="nav-icons">
+      <span class="material-symbols-outlined">home</span>
+      <span class="material-symbols-outlined">search</span>
+      <span class="material-symbols-outlined">upload_2</span>
+      <span class="material-symbols-outlined">handshake</span>
+      <span class="material-symbols-outlined">bookmark</span>
+    </div>
+  </nav>
+</body>
+</html>
